@@ -1,0 +1,7 @@
+Subsystem sftp /usr/lib/openssh/sftp-server
+
+Match group sftp
+    ChrootDirectory %h
+    X11Forwarding no
+    AllowTcpForwarding no
+    ForceCommand internal-sftp
